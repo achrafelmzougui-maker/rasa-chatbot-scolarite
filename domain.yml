@@ -1,0 +1,24 @@
+version: "3.1"
+intents:
+  - saluer
+  - inscription
+  - horaires
+  - documents
+  - contact
+  - au_revoir
+responses:
+  utter_saluer:
+    - text: "Bonjour ! Je peux répondre à des questions générales sur les démarches scolaires. Les informations doivent être confirmées auprès de l'établissement."
+  utter_inscription:
+    - text: "Les procédures d'inscription dépendent de la formation et de l'année. Consultez le portail officiel de votre établissement."
+  utter_horaires:
+    - text: "Je n'ai pas d'horaires vérifiés. Contactez directement l'administration pour les heures d'ouverture."
+  utter_documents:
+    - text: "La liste des pièces justificatives varie selon la procédure. Vérifiez l'annonce officielle."
+  utter_contact:
+    - text: "Utilisez les coordonnées publiées sur le site officiel de l'établissement."
+  utter_au_revoir:
+    - text: "Au revoir et bonne continuation !"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
