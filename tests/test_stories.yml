@@ -1,0 +1,18 @@
+version: "3.1"
+stories:
+  - story: Questions d'inscription
+    steps:
+      - user: |
+          Bonjour
+        intent: saluer
+      - action: utter_saluer
+      - user: |
+          Comment s'inscrire ?
+        intent: inscription
+      - action: utter_inscription
+  - story: Demande de contact
+    steps:
+      - user: |
+          Comment contacter l'administration ?
+        intent: contact
+      - action: utter_contact
