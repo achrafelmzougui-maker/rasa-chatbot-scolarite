@@ -1,0 +1,26 @@
+version: "3.1"
+rules:
+  - rule: Saluer
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+  - rule: Informations inscription
+    steps:
+      - intent: inscription
+      - action: utter_inscription
+  - rule: Horaires
+    steps:
+      - intent: horaires
+      - action: utter_horaires
+  - rule: Documents
+    steps:
+      - intent: documents
+      - action: utter_documents
+  - rule: Contact
+    steps:
+      - intent: contact
+      - action: utter_contact
+  - rule: Fin
+    steps:
+      - intent: au_revoir
+      - action: utter_au_revoir
